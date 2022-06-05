@@ -26,15 +26,12 @@ body{
 
 /*header*/
 
-/* .header{
+.header{
     background-color: #E4CAFD;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+    height: 80px;
+} 
 
-/* .header nav ul li {
+.header nav ul li {
     display: inline-block;
 }
 
@@ -45,10 +42,10 @@ nav ul{
 
 nav ul li{
     list-style: none;
-} */
+} 
 
 .navsize{
-    width: 200px;
+    width: 100px;
 }
 
 a{
