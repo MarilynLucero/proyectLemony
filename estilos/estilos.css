@@ -136,14 +136,14 @@ h3{
 
 /*Caja imagenes*/
 
-.caja{
-    display: flex;
-    justify-content: center;
-    gap: 500px;
-    margin-left: 150px;
-    margin-right: 150px;
-    align-items: center;
+hr{
+    height: 1px;
+    margin: 5rem;
+    background-color: currentColor;
+    opacity: .25;
+    box-sizing: border-box;
 }
+
 
 .cajaImg img{
     height: 800px;
@@ -166,6 +166,18 @@ form{
     font-family: 'Montserrat';
     font-weight: bolder;
     font-size: 20px;
+ }
+
+ /*About me*/
+
+ .aboutmeLetter{
+     font-family: 'Montserrat';
+     font-size: 100px;
+ }
+ /*Productos*/
+
+ .prodLetter{
+     font-family: 'Montserrat';
  }
 
 
@@ -204,3 +216,4 @@ form{
     width: 100%;
     height: 64px;
 }
+
