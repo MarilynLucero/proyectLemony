@@ -61,7 +61,7 @@ a{
 .cajaLemony {
     background-image: url(../img/proyecto2.avif);
     background-size: cover;
-    height: 1100px;
+    height: 900px;
 
     display: flex;
     justify-content: space-evenly;
