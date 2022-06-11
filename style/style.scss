@@ -2,6 +2,7 @@
 @import "nav";
 @import "variables";
 @import "cajalemony";
+@import "cajadisplay";
 
 /*Body*/
 
@@ -21,54 +22,6 @@ p{
     font-family: 'Montserrat';
     font-weight: 200;
     font-size: 40px;
-}
-
-/*caja display*/
-
-.display{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 50px;
-}
-
-.displayFather{
-    display: flex;
-    justify-content: space-between;
-    width: 92%;
-    padding: 100px;
-    background-color: transparent;
-    text-align: center;
-}
-
-.displayIcon{
-    text-align: center;
-    width: 100%;
-}
-
-.displayIcon img{
-    width: 200px;
-    height: 200px;
-}
-
-#displayImg2{
-    height: 100px;
-    width: 100px;
-    padding: 50px;
-    box-sizing: unset;
-}
-
-#displayImg3{
-    height: 100px;
-    width: 100px;
-    padding: 50px;
-    box-sizing: unset;
-}
-
-h3{
-    font-family: 'Montserrat';
-    font-size: 30px;
 }
 
 /*Caja imagenes*/
