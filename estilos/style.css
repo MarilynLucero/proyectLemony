@@ -61,6 +61,121 @@ html {
   text-align: center;
 }
 
+.displayFather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 92%;
+  padding: 100px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.displayFather .displayIcon {
+  text-align: center;
+  width: 100%;
+}
+
+.displayFather .displayIcon img {
+  width: 200px;
+  height: 200px;
+}
+
+.displayFather #displayImg2 {
+  height: 100px;
+  width: 100px;
+  padding: 50px;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+.displayFather #displayImg3 {
+  height: 100px;
+  width: 100px;
+  padding: 50px;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+.displayFather h3 {
+  font-family: 'Montserrat';
+  font-size: 30px;
+}
+
+/*mixin*/
+.cajaImg img {
+  height: 800px;
+  width: 800px;
+  content: inherit;
+  overflow: hidden;
+}
+
+.cajaLemony img {
+  height: 100%;
+  width: 800px;
+  text-align: center;
+}
+
+.social-facebook img {
+  height: 64px;
+  width: 100%;
+}
+
+.social-instagram img {
+  height: 64px;
+  width: 100%;
+}
+
+.social-whatsapp img {
+  height: 64px;
+  width: 100%;
+}
+
+/*extend*/
+.Montserrat, .displayFather h3, p, form {
+  font-family: 'Montserrat';
+}
+
+.displayFather h3 {
+  font-size: 30px;
+}
+
+p {
+  font-weight: 200;
+  font-size: 40px;
+}
+
+form {
+  padding: 45px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/*Mapas*/
+.btn--elemento {
+  background-color: pink;
+  margin: 5px;
+  border: 2px dotted #2582bc;
+  border-radius: 2px;
+}
+
+.btn--piloto {
+  background-color: crimson;
+  margin: 5px;
+  border: 2px dotted #2582bc;
+  border-radius: 2px;
+}
+
+.btn--calculador {
+  background-color: violet;
+  margin: 5px;
+  border: 2px dotted #2582bc;
+  border-radius: 2px;
+}
+
 /*Body*/
 body {
   background-color: #F0EBB1;
@@ -76,67 +191,6 @@ p {
   font-family: 'Montserrat';
   font-weight: 200;
   font-size: 40px;
-}
-
-/*caja display*/
-.display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 50px;
-}
-
-.displayFather {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 92%;
-  padding: 100px;
-  background-color: transparent;
-  text-align: center;
-}
-
-.displayIcon {
-  text-align: center;
-  width: 100%;
-}
-
-.displayIcon img {
-  width: 200px;
-  height: 200px;
-}
-
-#displayImg2 {
-  height: 100px;
-  width: 100px;
-  padding: 50px;
-  -webkit-box-sizing: unset;
-          box-sizing: unset;
-}
-
-#displayImg3 {
-  height: 100px;
-  width: 100px;
-  padding: 50px;
-  -webkit-box-sizing: unset;
-          box-sizing: unset;
-}
-
-h3 {
-  font-family: 'Montserrat';
-  font-size: 30px;
 }
 
 /*Caja imagenes*/
