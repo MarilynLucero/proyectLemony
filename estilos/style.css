@@ -148,6 +148,55 @@ hr {
   text-shadow: 1px 1px black;
 }
 
+/*productos cards*/
+.card {
+  margin-top: 60px;
+  width: 300px;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.card:hover {
+  width: 315px;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 100;
+  font-family: 'Montserrat';
+}
+
+.tittle-contact {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Montserrat';
+}
+
+.card img {
+  width: 400px;
+  height: 425px;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.card img:hover {
+  width: 100%;
+  height: 440px;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
 /*FORMULARIO*/
 form {
   padding: 45px;
@@ -193,7 +242,6 @@ img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1 / 13;
-  margin-bottom: 5vh;
 }
 
 .galery .grid {
@@ -265,8 +313,8 @@ img {
 
 .gallery-image {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: -webkit-transform 400ms ease-out;
@@ -276,8 +324,8 @@ img {
 }
 
 .gallery-image:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 /*footer*/
