@@ -35,7 +35,7 @@ html {
 .header ul li .a {
   text-decoration: none;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: black;
   font-family: 'Montserrat';
 }
@@ -102,78 +102,7 @@ html {
 
 .displayFather h3 {
   font-family: 'Montserrat';
-  font-size: 30px;
-}
-
-/*mixin*/
-.cajaImg img {
-  height: 800px;
-  width: 800px;
-  content: inherit;
-  overflow: hidden;
-}
-
-.cajaLemony img {
-  height: 100%;
-  width: 800px;
-  text-align: center;
-}
-
-.social-facebook img {
-  height: 64px;
-  width: 100%;
-}
-
-.social-instagram img {
-  height: 64px;
-  width: 100%;
-}
-
-.social-whatsapp img {
-  height: 64px;
-  width: 100%;
-}
-
-/*extend*/
-.Montserrat, .displayFather h3, p, form {
-  font-family: 'Montserrat';
-}
-
-.displayFather h3 {
-  font-size: 30px;
-}
-
-p {
-  font-weight: 200;
-  font-size: 40px;
-}
-
-form {
-  padding: 45px;
-  font-weight: bolder;
-  font-size: 20px;
-}
-
-/*Mapas*/
-.btn--elemento {
-  background-color: pink;
-  margin: 5px;
-  border: 2px dotted #2582bc;
-  border-radius: 2px;
-}
-
-.btn--piloto {
-  background-color: crimson;
-  margin: 5px;
-  border: 2px dotted #2582bc;
-  border-radius: 2px;
-}
-
-.btn--calculador {
-  background-color: violet;
-  margin: 5px;
-  border: 2px dotted #2582bc;
-  border-radius: 2px;
+  font-size: 1.875rem;
 }
 
 /*Body*/
@@ -190,7 +119,7 @@ body {
 p {
   font-family: 'Montserrat';
   font-weight: 200;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 /*Caja imagenes*/
@@ -207,12 +136,14 @@ hr {
   height: 800px;
   width: 800px;
   content: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
 }
 
 .cajaTexto h3 {
   font-family: 'Courgette', cursive;
-  font-size: 100px;
+  font-size: 6.25rem;
   color: #f3b7b5;
   text-shadow: 1px 1px black;
 }
@@ -222,13 +153,13 @@ form {
   padding: 45px;
   font-family: 'Montserrat';
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 /*About me*/
 .aboutmeLetter {
   font-family: 'Montserrat';
-  font-size: 100px;
+  font-size: 6.25rem;
 }
 
 /*Productos*/
@@ -379,7 +310,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .social-facebook img {
@@ -401,8 +332,8 @@ img {
 @media screen and (max-width: 619px) {
   /* GALLERY */
   .galery .grid {
-    -ms-grid-columns: (1fr)[1] !important;
-        grid-template-columns: repeat(1, 1fr) !important;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (50vh)[5];
         grid-template-rows: repeat(5, 50vh);
   }
