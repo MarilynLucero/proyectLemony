@@ -22,7 +22,7 @@ body{
 p{
     font-family: 'Montserrat';
     font-weight: 200;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 /*Caja imagenes*/
@@ -31,14 +31,14 @@ hr{
     height: 1px;
     margin: 5rem;
     background-color: currentColor;
-    opacity: .25;
+    opacity: 0.25;
     box-sizing: border-box;
 }
 
 
 .cajaImg img{
-    height: 800px;
-    width: 800px;
+    height: 500px;
+    width: 500px;
     content: inherit;
     object-fit: cover;
     overflow: hidden;
@@ -46,12 +46,13 @@ hr{
 
 .cajaTexto h3{
     font-family: 'Courgette', cursive;
-    font-size: 6.25rem;
+    font-size: 3.25rem;
     color: #f3b7b5;
     text-shadow: 1px 1px black;
 }
 
 /*productos cards*/
+
 .card {
     margin-top: 60px;
     width: 300px;
@@ -105,7 +106,7 @@ form{
 
  .aboutmeLetter{
      font-family: 'Montserrat';
-     font-size: 6.25rem;
+     font-size: 2.25rem;
  }
 
  /*Productos*/
@@ -119,6 +120,7 @@ form{
     height: auto;
     box-sizing: border-box
 }
+
 /* GRID */
 
 .grid {
@@ -188,28 +190,29 @@ form{
 .media{
     display: flex;
     align-items: center;
-    height: 200px;
+    height: 100px;
     gap: 20px;
 }
 
 .mediatexto p{
     align-items: center;
     font-weight: 400;
-    font-size: 1.875rem;
+    font-size: 1rem;
 }
+
 .social-facebook img{
     width: 100%;
-    height: 64px;
+    height: 50px;
 }
 
 .social-instagram img{
     width: 100%;
-    height: 64px;
+    height: 50px;
 }
 
 .social-whatsapp img{
     width: 100%;
-    height: 64px;
+    height: 45px;
 }
 
 /*Responsive*/
