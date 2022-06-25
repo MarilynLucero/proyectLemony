@@ -185,6 +185,9 @@ form{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .media{
@@ -255,6 +258,33 @@ form{
     background-color: transparent;
     text-align: center;
 }
+
+/*sobre mi*/
+
+.respImg img{
+    display: none;
 }
+
+.aboutmeLetter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*footer*/
+
+.footerGral{
+    background-color: #E4CAFD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+}
+
+
 
 
