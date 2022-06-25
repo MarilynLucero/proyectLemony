@@ -389,12 +389,12 @@ img {
 @media screen and (max-width: 1500px) {
   .card {
     width: 200px;
-  }
-  .card img {
-    width: 200px;
-    height: auto;
-  }
-  .card:hover {
+   }
+   .card img {
+     width: 200px;
+     height: auto;
+   }
+   .card:hover {
     width: 215px;
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
@@ -408,11 +408,11 @@ img {
 }
 
 @media screen and (max-width: 992px) {
-  .row-cols-2 > {
+  .row-cols-2 > *{
     width: 18%;
   }
   .card {
-    width: 130px;
+   width: 130px;
   }
   .card img {
     width: 130px;
@@ -429,46 +429,49 @@ img {
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
   }
+
   .card .card-body .card-text {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 784px) {
-  .row-cols-2 > {
+  .row-cols-2 > *{
     width: auto;
   }
   .card {
     width: 180px;
-  }
-  .card img {
-    width: 180px;
-    height: auto;
-  }
-  .card:hover {
-    width: 195px;
-    -webkit-transition: 0.5s all ease-in-out;
-    transition: 0.5s all ease-in-out;
-  }
-  .card img:hover {
-    width: 195px;
-    height: auto;
-    -webkit-transition: 0.5s all ease-in-out;
-    transition: 0.5s all ease-in-out;
-  }
-  .card .card-body .card-text {
+   }
+   .card img {
+     width: 180px;
+     height: auto;
+   }
+   .card:hover {
+     width: 195px;
+     -webkit-transition: 0.5s all ease-in-out;
+     transition: 0.5s all ease-in-out;
+   }
+   .card img:hover {
+     width: 195px;
+     height: auto;
+     -webkit-transition: 0.5s all ease-in-out;
+     transition: 0.5s all ease-in-out;
+   }
+   .card .card-body .card-text {
     font-size: 16px;
   }
   .tittle, .tittle-contact {
     padding: 100px;
   }
-}
 
-@media screen and (max-width: 584px) {
-  .tittle, .tittle-contact {
-    padding: 50px;
   }
-}
+
+  @media screen and (max-width: 584px) {
+    .tittle, .tittle-contact {
+      padding: 50px;
+    }
+  }
+
 
 @media only screen and (max-width: 980px) {
   /*caja display*/
@@ -603,4 +606,3 @@ img {
     grid-column: 1;
   }
 }
-/*# sourceMappingURL=style.css.map */
