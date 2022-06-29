@@ -158,6 +158,7 @@ hr {
 
 /*productos cards*/
 .card {
+  position: inherit;
   margin-top: 60px;
   width: 300px;
   -webkit-transition: 0.5s all ease-in-out;
@@ -174,7 +175,7 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2rem;
+  font-size: 1.2rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -219,6 +220,180 @@ form {
   font-size: 2.25rem;
 }
 
+.ih-item {
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.ih-item,
+.ih-item * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.fila {
+  gap: 30px;
+}
+
+.ih-item a {
+  color: #333;
+}
+
+.ih-item a:hover {
+  text-decoration: none;
+}
+
+.ih-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.ih-item.circle {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.ih-item.circle .img {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.ih-item.circle .img:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle .img img {
+  border-radius: 50%;
+}
+
+.ih-item.circle .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.ih-item.circle.effect8.colored .info {
+  background: #1a4a72;
+}
+
+.ih-item.circle.effect8 .img-container {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.ih-item.circle.effect8 .img-container .img {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  transition: all 0.3s ease-in-out 0.3s;
+}
+
+.ih-item.circle.effect8 .info-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  transition: all 0.3s ease-in-out 0.3s;
+}
+
+.ih-item.circle.effect8 .info {
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  pointer-events: none;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: all 0.35s ease-in-out 0.6s;
+  transition: all 0.35s ease-in-out 0.6s;
+}
+
+.ih-item.circle.effect8 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 45px 0 0 0;
+  height: 140px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect8 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect8 a:hover .img-container {
+  pointer-events: none;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.ih-item.circle.effect8 a:hover .img-container .img {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ih-item.circle.effect8 a:hover .info-container {
+  opacity: 1;
+}
+
+.ih-item.circle.effect8 a:hover .info-container .info {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.ih-item.circle.effect8.left_to_right .img-container .img {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.ih-item.circle.effect8.left_to_right .info-container {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.ih-item.circle.effect8.left_to_right a:hover .img-container .img {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.ih-item.circle.effect8.left_to_right a:hover .info-container {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 /*Productos*/
 .prodLetter {
   font-family: 'Montserrat';
@@ -233,7 +408,6 @@ img {
 
 /* GRID */
 .grid {
-  padding: 0 8vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -242,7 +416,8 @@ img {
       grid-template-rows: repeat(auto, 1fr);
   /*altura de la linea*/
   grid-gap: 20px;
-  width: 100%;
+  width: 99%;
+  margin-left: auto;
 }
 
 /* GALLERY */
@@ -432,6 +607,20 @@ img {
   .card .card-body .card-text {
     font-size: 14px;
   }
+  /*header*/
+  .nav-item, .navbar-nav {
+    position: relative;
+    display: block;
+    background-color: #E4CAFD;
+  }
+  .nav-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 784px) {
@@ -467,6 +656,7 @@ img {
 @media screen and (max-width: 584px) {
   .tittle, .tittle-contact {
     padding: 50px;
+    font-size: 20px;
   }
 }
 
@@ -601,6 +791,10 @@ img {
   .item1, .item4, .item7, .item10, .item13, .item2, .item5, .item8, .item11, .item14, .item3, .item6, .item9, .item12, .item15 {
     -ms-grid-column: 1;
     grid-column: 1;
+  }
+  .grid {
+    margin-left: auto;
+    width: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */
