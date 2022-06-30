@@ -166,12 +166,6 @@ hr {
   transition: 0.5s all ease-in-out;
 }
 
-.card:hover {
-  width: 315px;
-  -webkit-transition: 0.5s all ease-in-out;
-  transition: 0.5s all ease-in-out;
-}
-
 .tittle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,13 +190,6 @@ hr {
 .card img {
   width: 400px;
   height: 425px;
-  -webkit-transition: 0.5s all ease-in-out;
-  transition: 0.5s all ease-in-out;
-}
-
-.card img:hover {
-  width: 100%;
-  height: 440px;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
 }
@@ -550,17 +537,6 @@ img {
     width: 200px;
     height: auto;
   }
-  .card:hover {
-    width: 215px;
-    -webkit-transition: 0.5s all ease-in-out;
-    transition: 0.5s all ease-in-out;
-  }
-  .card img:hover {
-    width: 215px;
-    height: auto;
-    -webkit-transition: 0.5s all ease-in-out;
-    transition: 0.5s all ease-in-out;
-  }
   /*caja envio*/
   .displayFather {
     margin-right: auto;
@@ -568,7 +544,7 @@ img {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .row-cols-2 > {
     width: 18%;
   }
@@ -578,17 +554,6 @@ img {
   .card img {
     width: 130px;
     height: auto;
-  }
-  .card:hover {
-    width: 145px;
-    -webkit-transition: 0.5s all ease-in-out;
-    transition: 0.5s all ease-in-out;
-  }
-  .card img:hover {
-    width: 145px;
-    height: auto;
-    -webkit-transition: 0.5s all ease-in-out;
-    transition: 0.5s all ease-in-out;
   }
   .card .card-body .card-text {
     font-size: 14px;
@@ -663,17 +628,6 @@ img {
     width: 180px;
     height: auto;
   }
-  .card:hover {
-    width: 195px;
-    -webkit-transition: 0.5s all ease-in-out;
-    transition: 0.5s all ease-in-out;
-  }
-  .card img:hover {
-    width: 195px;
-    height: auto;
-    -webkit-transition: 0.5s all ease-in-out;
-    transition: 0.5s all ease-in-out;
-  }
   .card .card-body .card-text {
     font-size: 16px;
   }
@@ -685,7 +639,17 @@ img {
 @media screen and (max-width: 584px) {
   .tittle, .tittle-contact {
     padding: 50px;
-    font-size: 20px;
+    font-size: 12px;
+  }
+  .card {
+    width: 140px;
+  }
+  .card img {
+    width: 140px;
+    height: auto;
+  }
+  .card .card-body .card-text {
+    font-size: 12px;
   }
 }
 
